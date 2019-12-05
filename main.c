@@ -28,11 +28,13 @@ int main(int argc, const char * argv[])
   }
   else if(isdigit(*argv[1]))
   {
-    printf("isDigit\n");
+    robotPrintAscii();
+    dalekPrintAscii();
+    robotPrintMessage();
   }
   else
   {
-    robotPrintAscii();
+    printf("Invalid argument\n");
   }
   return 0;
 }
