@@ -40,13 +40,10 @@ void robotPrintAscii(void)
   printf("\n\n"
 	 "UWR: Unidentified Wheeled Robot\n"
 	 "%s    i_i    \n"
-<<<<<<< HEAD
 	 "%s   [?_?]   \n"
-=======
 	 "%s   [!_!]   \n"
->>>>>>> af5d4c439664c35cacc829cecabc25e8f138cec6
 	 "%s  /|___|\\ \n"
-	 "%s   d   b   \n",blank, blank, blank, blank);
+	 "%s   d   b   \n",blank, blank, blank, blank, blank);
 
   blank = blank - 10;
 }
@@ -63,11 +60,8 @@ void dalekPrintAscii(void)
   printf("\n\n"
 	 "I am Dalek, from Dr. Who\n"
 	 "%s      <----->      \n" 
-<<<<<<< HEAD
          "%s     <  (?)  >     \n"        
-=======
          "%s     <  (!)  >     \n"        
->>>>>>> af5d4c439664c35cacc829cecabc25e8f138cec6
          "%s     |       |     \n"
          "%s    < ------- >    \n"
          "%s    o         o    \n"
@@ -76,6 +70,6 @@ void dalekPrintAscii(void)
    	 "%s o o o o o o o o o \n"
    	 "%s o o o o o o o o o \n"
    	 "%s o o o o o o o o o \n", blank, blank, blank, blank, blank, blank, 
-	 blank, blank, blank, blank);
+	 blank, blank, blank, blank, blank);
   blank = blank - 10;
 }
