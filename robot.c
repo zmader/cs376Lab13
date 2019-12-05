@@ -28,20 +28,40 @@ void robotPrintMessage(void)
  * robotPrintAscii
  *
  */
+
+char* blank(int n) {
+char* ret;
+	if (n == 0) {
+		ret = "         ";
+	}
+	if (n == 1) {
+		ret = "                   ";
+	}
+	else {
+		ret = "                              ";
+	}
+return ret;
+}
+
+
+
 void robotPrintAscii(void)
 {
   int i;
-  char* blank = "                              ";
-  blank = blank +30;
+
+for (int i = 0; i < 3; i++) {
+ 
+  //char* blank = "                             ";
+  //blank = blank +30;
 	printf("\n\n"
 	 "UWR: Unidentified Wheeled Robot\n"
 	 "%s    i_i    \n"
 	 "%s   [!_!]   \n"
 	 "%s  /|___|\\ \n"
-	 "%s   d   b   \n",blank, blank, blank, blank);
+	 "%s   d   b   \n",blank(i), blank(i), blank(i), blank(i));
 	
-  blank = blank - 10;
-
+  //blank = blank - 10;
+}
 }
 
 /**
